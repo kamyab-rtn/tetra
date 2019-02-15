@@ -35,12 +35,46 @@
 
 .card-body {
     position: relative;
-    top: 4%;}
+    top: 4%;
+}
 
+.card {
+    overflow: hidden;
+}
 
+.card:hover {
+    cursor: pointer;
+}
 
+.card-hover-item {
+    position: absolute;
+    width: 100%;
+    transition: transform .3s ease;
+}
 
+.card:hover .card-hover-item {
+    transform: translateY(0);
+}
 
+.card-hover-box {
+    top: 0;
+    height: 50%;
+    transform: translateY(-101%);
+    background-color: #000;
+}
 
+.card-hover-footer {
+    bottom: 0;
+    transform: translateY(101%);
+}
 
+.card-hover-footer p {
+    margin: 0;
+}
 
+.tag-wrapper {
+    width: 82%;
+    margin: auto;
+    padding-bottom: 35px;
+    text-align: center;
+}
